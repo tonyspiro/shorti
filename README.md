@@ -73,6 +73,8 @@ top | t-number(p,n)
 right | r-number(p,n)
 left | l-number(p,n)
 bottom | b-number(p,n)
+borderWidth | bw-number
+borderColor | bc-(hex value)
 borderRadius | br-number(p)
 fontSize | font-number(p)
 
@@ -89,3 +91,4 @@ position:fixed | fixed
 float:left | left
 float:right | right
 cursor:pointer | pointer
+borderStyle | solid
