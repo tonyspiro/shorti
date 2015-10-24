@@ -1,8 +1,11 @@
 {
   "name": "shorti",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "description": "Shorti helps you add style to your React components by rendering short-hand \"class names\" into inline styles.",
   "main": "index.js",
+  "directories": {
+    "example": "example"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -10,19 +13,10 @@
     "type": "git",
     "url": "git+https://github.com/tonyspiro/shorti.git"
   },
-  "keywords": [
-    "style",
-    "helpers",
-    "css",
-    "react"
-  ],
   "author": "Tony Spiro",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/tonyspiro/shorti/issues"
   },
-  "homepage": "https://github.com/tonyspiro/shorti#readme",
-  "directories": {
-    "example": "example"
-  }
+  "homepage": "https://github.com/tonyspiro/shorti#readme"
 }

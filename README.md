@@ -76,3 +76,17 @@ left | l-number(p,n)
 bottom | b-number(p,n)
 borderRadius | br-number(p)
 fontSize | font-number(p)
+
+####Semantic
+Property | Shorti
+--- | --- | ---
+boxSizing:border-box | border-box
+display:block | block
+display:inline | inline
+display:inline-block | inline-block
+position:relative | relative
+position:absolute | absolute
+position:fixed | fixed
+float:left | left
+float:right | right
+cursor:pointer | pointer
