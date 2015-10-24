@@ -49,7 +49,7 @@ module.exports = function(class_string){
 			return el.className;
 		},
 
-		isNubmeric(prop_abrv){
+		isNubmeric: function(prop_abrv){
 			
 			if(	style_map__numberic.hasOwnProperty(prop_abrv)){
 				
