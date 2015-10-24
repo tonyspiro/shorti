@@ -34,7 +34,7 @@ Edit app.js for live reloading
 
 This:
 ```javascript
-let style = Shorti('w-500 h-210 p-40 font-50 relative t-100 l-50p ml-n205 left border-box pointer');
+let style = Shorti('w-500 h-210 p-40 font-50 relative t-100 l-50p ml-n205 solid bw-1 bc-444');
 	return <div style={ style }>
 		Hello world
 	</div>;
@@ -42,7 +42,7 @@ let style = Shorti('w-500 h-210 p-40 font-50 relative t-100 l-50p ml-n205 left b
 ```
 renders to:
 ```html
-<div style="box-sizing:border-box;cursor:pointer;float:left;font-size:50px;height:210px;left:50%;margin-left:-205px;padding:40px;position:relative;top:100px;width:500px;border:1px solid #333;">
+<div style="border-color:#444;border-style:solid;border-width:1px;font-size:50px;height:210px;left:50%;margin-left:-205px;padding:40px;position:relative;top:100px;width:500px;">
 	Hello world
 </div>
 ```
