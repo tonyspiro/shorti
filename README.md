@@ -10,7 +10,6 @@ npm install shorti
 and then include the package in your app:
 ```javascript
 import Shorti from 'shorti';
-// then create your style object for your component
 let style = Shorti('w-500 h-500 p-20');
 /* same as 
 let style = {
