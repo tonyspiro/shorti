@@ -9,9 +9,16 @@ npm install shorti
 ```
 and then include the package in your app:
 ```javascript
-import Shorty from 'shorti';
+import Shorti from 'shorti';
 // then create your style object for your component
-let style = Shorty('w-500 h-500 p-20');
+let style = Shorti('w-500 h-500 p-20');
+/* same as 
+let style = {
+		width: '500px',
+		height: '500px',
+		padding: '20px'
+};
+*/
 ```
 ###Play With The Example
 ```
@@ -28,7 +35,7 @@ Edit app.js for live reloading
 
 This:
 ```javascript
-let style = Shorty('w-500 h-210 p-40 font-50 relative t-100 l-50p ml-n205 left border-box pointer');
+let style = Shorti('w-500 h-210 p-40 font-50 relative t-100 l-50p ml-n205 left border-box pointer');
 	return <div style={ style }>
 		Hello world
 	</div>;

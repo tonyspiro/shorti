@@ -43,7 +43,7 @@ module.exports = function(class_string){
 		"pointer": "cursor"
 	};
 
-	var Shorty = {
+	var Shorti = {
 		
 		getElClasses: function(el){
 			return el.className;
@@ -154,6 +154,6 @@ module.exports = function(class_string){
 
 	};
 
-	return Shorty.render(class_string);
+	return Shorti.render(class_string);
 
 };
