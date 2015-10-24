@@ -7,6 +7,12 @@ Shorti helps you add style to your React components by rendering short-hand "cla
 ```
 npm install shorti
 ```
+and then include the package in your app:
+```javascript
+import Shorty from 'shorti';
+// then create your style object for your component
+let style = Shorty('w-500 h-210 p-40 font-50 relative t-100 l-50p ml-n205 left border-box pointer');
+```
 #####Example
 ```
 git clone https://github.com/tonyspiro/shorti
