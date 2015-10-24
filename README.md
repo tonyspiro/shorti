@@ -1,5 +1,5 @@
 # Shorti
-Shorti helps you add styles to your React components by rendering short-hand "class names" into inline styles.
+Shorti helps you add styles to your React components by rendering short-hand "class names" into inline styles.  Also works in React Native.
 
 ### Getting started
 
