@@ -1,4 +1,4 @@
-// index.js
+// index.js 
 module.exports = function(class_string){
 	
 	var style_map__numberic = {
@@ -42,7 +42,8 @@ module.exports = function(class_string){
 		"fixed": "position",
 		"left": "float",
 		"right": "float",
-		"pointer": "cursor"
+		"pointer": "cursor",
+		"solid": "borderStyle"
 	};
 
 	var Shorti = {
@@ -70,6 +71,7 @@ module.exports = function(class_string){
 			var _this = this;
 			var class_list = class_string.split(' ');
 			var style_object = {};
+			
 			class_list.forEach(function(el_class){
 				
 				var prop_abrv = el_class.split('-')[0];
@@ -78,13 +80,8 @@ module.exports = function(class_string){
 				if(_this.isNubmeric(prop_abrv)){
 					
 					var value = el_class.split('-')[1];
-					var property;
-
-					// Style map numberic
-					if(style_map__numberic.hasOwnProperty(prop_abrv)){
-						property = style_map__numberic[prop_abrv];
-					}
-
+					var property = style_map__numberic[prop_abrv];
+					
 					if (property) {
 						
 						// Get value	
