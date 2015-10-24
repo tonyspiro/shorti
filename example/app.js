@@ -7,8 +7,7 @@ class App extends Component {
 
 	render(){
 
-		let style = Shorti('w-500 h-210 p-40 font-50 relative t-100 l-50p ml-n205 left border-box pointer');
-		style.border = '1px solid #333';
+		let style = Shorti('w-500 h-210 p-40 font-50 relative t-100 l-50p ml-n205 solid bw-2 bc-444');
 
 		return <div style={ style }>
 			Hello world
