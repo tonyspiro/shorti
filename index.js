@@ -25,7 +25,9 @@ module.exports = function(class_string){
 		"l": "left",
 		"b": "bottom",
 		"br": "borderRadius",
-		"font": "fontSize"
+		"font": "fontSize",
+		"bw": "borderWidth",
+		"bc": "borderColor",
 	};
 
 	var style_map__semantic = {
@@ -90,6 +92,16 @@ module.exports = function(class_string){
 
 						// Default px
 						new_value = value + 'px';	// default
+
+						// Native support
+						if(!window.document){
+							new_value = parseInt(value.replace('px',''));
+						}
+
+						// Border color
+						if (prop_abrv.indexOf('bc') !== -1) {
+							new_value = '#' + value;
+						}
 						
 						// Percent
 						if (value.indexOf('p') !== -1) {
