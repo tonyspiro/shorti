@@ -13,7 +13,7 @@ import Shorty from 'shorti';
 // then create your style object for your component
 let style = Shorty('w-500 h-500 p-20');
 ```
-#####Example
+###Play With The Example
 ```
 git clone https://github.com/tonyspiro/shorti
 cd shorti/example
