@@ -1,5 +1,7 @@
 # Shorti
-Shorti helps you style your React components by rendering short-hand "class names" into inline styles.  Also works in React Native.  Check out the API section below to get all the shorties.  
+Shorti helps you style your React components by rendering short-hand "class names" into inline styles.  Also works in React Native.  Check out the API section below to get all the shorties.
+
+Also available for the browser with shorti-browser.  Just add "shorti" as a class along with your other shorti class names.
 
 This is a work in progress, please fork and add to it!
 
@@ -21,10 +23,10 @@ let style = {
 };
 */
 ```
-###Play With The Example
+###React Example
 ```
 git clone https://github.com/tonyspiro/shorti
-cd shorti/example
+cd shorti/examples/react
 npm install
 ```
 #####Run webpack dev
@@ -47,6 +49,36 @@ renders to:
 	Hello world
 </div>
 ```
+###Browser Example
+This:
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Shorti Browser Example</title>
+</head>
+<body>
+	<div class="shorti w-100 h-100 solid bw-1 bc-000 center-block t-300 relative"></div>
+	<script src="shorti-browser.js"></script>
+</body>
+</html>
+```
+renders to:
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Shorti Browser Example</title>
+</head>
+<body>
+	<div class="shorti w-100 h-100 solid bw-1 bc-000 center-block t-300 relative" style="border: 1px solid rgb(0, 0, 0); height: 100px; margin: 0px auto; position: relative; top: 300px; width: 100px;"></div>
+	<script src="shorti-browser.js"></script>
+</body>
+</html>
+```
+
 ###API
 ####Numeric
 p = percent<br>
