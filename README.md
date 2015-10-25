@@ -51,47 +51,47 @@ renders to:
 p = percent<br>
 n = negative<br>
 
-Property | Shorti
+Shorti | Property
 --- | --- | ---
-width | w-number(p)
-minWidth | minw-number(p)
-maxWidth | maxw-number(p)
-height | h-number(p)
-minHeight | minh-number(p)
-maxHeight | maxh-number(p)
-margin | m-number(p)
-marginTop | mt-number(p,n)
-marginRight | mr-number(p,n)
-marginBottom | mb-number(p,n)
-marginLeft | ml-number(p,n)
-padding | p-number(p)
-paddingTop | pt-number(p)
-paddingRight | pr-number(p)
-paddingBottom | pb-number(p)
-paddingLeft | pl-number(p)
-top | t-number(p,n)
-right | r-number(p,n)
-left | l-number(p,n)
-bottom | b-number(p,n)
-borderWidth | bw-number
-borderColor | bc-(hex value)
-borderRadius | br-number(p)
-fontSize | font-number(p)
+w-number(p) | width
+minw-number(p) | minWidth
+maxw-number(p) | maxWidth
+h-number(p) | height
+minh-number(p) | minHeight
+maxh-number(p) | maxHeight
+m-number(p) | margin
+mt-number(p,n) | marginTop
+mr-number(p,n) | marginRight
+mb-number(p,n) | marginBottom
+ml-number(p,n) | marginLeft
+p-number(p) | padding
+pt-number(p) | paddingTop
+pr-number(p) | paddingRight
+pb-number(p) | paddingBottom
+pl-number(p) | paddingLeft
+t-number(p,n) | top
+r-number(p,n) | right
+l-number(p,n) | left
+b-number(p,n) | bottom
+bw-number | borderWidth
+bc-(hex value) | borderColor
+br-number(p) | borderRadius
+font-number(p) | fontSize
 
 ####Semantic
-Property | Shorti
+Shorti | Property
 --- | --- | ---
-boxSizing:border-box | box
-display:block | block
-display:inline | inline
-display:inline-block | inline-block
-position:relative | relative
-position:absolute | absolute
-position:fixed | fixed
-float:left | pull-left
-float:right | pull-right
-cursor:pointer | pointer
-borderStyle:solid | solid
-textAlign:center | text-center
-textAlign:left | text-left
-textAlign:right | text-right
+box | boxSizing:border-box 
+block | display:block 
+inline | display:inline 
+inline-block | display:inline-block 
+relative | position:relative 
+absolute | position:absolute 
+fixed | position:fixed 
+pull-left | float:left 
+pull-right | float:right 
+pointer | cursor:pointer 
+solid | borderStyle:solid 
+text-center | textAlign:center 
+text-left | textAlign:left 
+text-right | textAlign:right 
