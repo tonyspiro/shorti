@@ -1,7 +1,7 @@
 # Shorti
 Shorti helps you style your React components by rendering short-hand "class names" into inline styles.  Also works in React Native and as a separate file in the browser!  For browser support, include ```shorti-browser.js``` and add "shorti" as a class along with your other Shorti class names.
 
-Check out the [API page](https://github.com/tonyspiro/shorti/blob/master/API.md) to get all the Shorties.
+[Check out the API page](https://github.com/tonyspiro/shorti/blob/master/API.md) to get all the Shorties.
 
 This is a work in progress, please fork and add to it!
 
