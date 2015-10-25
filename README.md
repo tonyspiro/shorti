@@ -85,7 +85,8 @@ Shorti | Property
 box | boxSizing:border-box 
 block | display:block 
 inline | display:inline 
-inline-block | display:inline-block 
+inline-block | display:inline-block
+hidden | display:none
 relative | position:relative 
 absolute | position:absolute 
 fixed | position:fixed 
@@ -95,4 +96,6 @@ pointer | cursor:pointer
 solid | borderStyle:solid 
 text-center | textAlign:center 
 text-left | textAlign:left 
-text-right | textAlign:right 
+text-right | textAlign:right
+center-block | margin:0 auto
+clearfix | clear:both
