@@ -35,10 +35,9 @@ Edit app.js for live reloading
 This:
 ```javascript
 let style = Shorti('w-500 h-210 p-40 font-50 relative t-100 l-50p ml-n205 solid bw-1 bc-444');
-	return <div style={ style }>
-		Hello world
-	</div>;
-}
+return <div style={ style }>
+	Hello world
+</div>;
 ```
 renders to:
 ```html
