@@ -164,7 +164,7 @@ module.exports = function(class_string){
 					var prop_abrv = el_class;
 
 					// Style map semantic
-					if(style_map__semantic.hasOwnProperty(prop_abrv)){
+					if (style_map__semantic.hasOwnProperty(prop_abrv)) {
 						propery = style_map__semantic[prop_abrv].key;
 						style_object[propery] = style_map__semantic[prop_abrv].value;
 					}
