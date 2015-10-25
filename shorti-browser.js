@@ -1,36 +1,35 @@
 // shorti-browser.js 
 (function(){
-	var style_map__numberic = {
 
-	// Layout
-	"w": "width",
-	"minw": "minWidth",
-	"maxw": "maxWidth",
-	"h": "height",
-	"minh": "minHeight",
-	"maxh": "maxHeight",
-	"m": "margin",
-	"mt": "marginTop",
-	"mr": "marginRight",
-	"mb": "marginBottom",
-	"ml": "marginLeft",
-	"p": "padding",
-	"pt": "paddingTop",
-	"pr": "paddingRight",
-	"pb": "paddingBottom",
-	"pl": "paddingLeft",
-	"t": "top",
-	"r": "right",
-	"l": "left",
-	"b": "bottom",
-	"br": "borderRadius",
-	"font": "fontSize",
-	"bw": "borderWidth",
-	"bc": "borderColor",
+	var style_map__numeric = {
+		// Numeric
+		"w": "width",
+		"minw": "minWidth",
+		"maxw": "maxWidth",
+		"h": "height",
+		"minh": "minHeight",
+		"maxh": "maxHeight",
+		"m": "margin",
+		"mt": "marginTop",
+		"mr": "marginRight",
+		"mb": "marginBottom",
+		"ml": "marginLeft",
+		"p": "padding",
+		"pt": "paddingTop",
+		"pr": "paddingRight",
+		"pb": "paddingBottom",
+		"pl": "paddingLeft",
+		"t": "top",
+		"r": "right",
+		"l": "left",
+		"b": "bottom",
+		"br": "borderRadius",
+		"font": "fontSize",
+		"bw": "borderWidth",
+		"bc": "borderColor",
 	};
 
 	var style_map__semantic = {
-		
 		// Semantic names
 		"box": {
 			"key": "boxSizing",
@@ -51,6 +50,10 @@
 		"hidden": {
 			"key": "display",
 			"value": "none"
+		},
+		"flex": {
+			"key": "display",
+			"value": "flex"
 		},
 		"relative": {
 			"key": "position",
@@ -110,7 +113,7 @@
 
 		isNubmericShorti: function(prop_abrv){
 			
-			if(	style_map__numberic.hasOwnProperty(prop_abrv)){
+			if(	style_map__numeric.hasOwnProperty(prop_abrv)){
 				
 				return true;
 
@@ -136,7 +139,7 @@
 				if(_this.isNubmericShorti(prop_abrv)){
 					
 					var value = el_class.split('-')[1];
-					var property = style_map__numberic[prop_abrv];
+					var property = style_map__numeric[prop_abrv];
 					
 					if (property) {
 						

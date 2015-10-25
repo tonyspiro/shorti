@@ -1,9 +1,8 @@
 // index.js 
 module.exports = function(class_string){
 	
-	var style_map__numberic = {
-
-		// Layout
+	var style_map__numeric = {
+		// Numeric
 		"w": "width",
 		"minw": "minWidth",
 		"maxw": "maxWidth",
@@ -31,7 +30,6 @@ module.exports = function(class_string){
 	};
 
 	var style_map__semantic = {
-		
 		// Semantic names
 		"box": {
 			"key": "boxSizing",
@@ -48,6 +46,14 @@ module.exports = function(class_string){
 		"inline-block": {
 			"key": "display",
 			"value": "inline-block",
+		},
+		"hidden": {
+			"key": "display",
+			"value": "none"
+		},
+		"flex": {
+			"key": "display",
+			"value": "flex"
 		},
 		"relative": {
 			"key": "position",
@@ -99,7 +105,7 @@ module.exports = function(class_string){
 
 		isNubmeric: function(prop_abrv){
 			
-			if(	style_map__numberic.hasOwnProperty(prop_abrv)){
+			if(	style_map__numeric.hasOwnProperty(prop_abrv)){
 				
 				return true;
 
@@ -125,7 +131,7 @@ module.exports = function(class_string){
 				if(_this.isNubmeric(prop_abrv)){
 					
 					var value = el_class.split('-')[1];
-					var property = style_map__numberic[prop_abrv];
+					var property = style_map__numeric[prop_abrv];
 					
 					if (property) {
 						
