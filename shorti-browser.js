@@ -1,4 +1,4 @@
-// index.js 
+// shorti-browser.js 
 (function(){
 	var style_map__numberic = {
 
