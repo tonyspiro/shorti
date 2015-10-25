@@ -33,17 +33,62 @@ module.exports = function(class_string){
 	var style_map__semantic = {
 		
 		// Semantic names
-		"border-box": "boxSizing",
-		"block": "display",
-		"inline": "display",
-		"inline-block": "display",
-		"relative": "position",
-		"absolute": "position",
-		"fixed": "position",
-		"left": "float",
-		"right": "float",
-		"pointer": "cursor",
-		"solid": "borderStyle"
+		"box": {
+			"key": "boxSizing",
+			"value": "border-box",
+		},
+		"block": {
+			"key": "display",
+			"value": "block",
+		},
+		"inline": {
+			"key": "display",
+			"value": "inline",
+		},
+		"inline-block": {
+			"key": "display",
+			"value": "inline-block",
+		},
+		"relative": {
+			"key": "position",
+			"value": "relative",
+		},
+		"absolute": {
+			"key": "position",
+			"value": "absolute",
+		},
+		"fixed": {
+			"key": "position",
+			"value": "fixed",
+		},
+		"pull-left": {
+			"key": "float",
+			"value": "left",
+		},
+		"pull-right": {
+			"key": "float",
+			"value": "right",
+		},
+		"pointer": {
+			"key": "cursor",
+			"value": "pointer",
+		},
+		"solid": {
+			"key": "borderStyle",
+			"value": "solid",
+		},
+		"text-center": {
+			"key": "textAlign",
+			"value": "center",
+		},
+		"text-left": {
+			"key": "textAlign",
+			"value": "left",
+		},
+		"text-right": {
+			"key": "textAlign",
+			"value": "right",
+		}
 	};
 
 	var Shorti = {
@@ -120,8 +165,8 @@ module.exports = function(class_string){
 
 					// Style map semantic
 					if(style_map__semantic.hasOwnProperty(prop_abrv)){
-						value = style_map__semantic[prop_abrv];
-						style_object[value] = prop_abrv;
+						propery = style_map__semantic[prop_abrv].key;
+						style_object[propery] = style_map__semantic[prop_abrv].value;
 					}
 
 				}
@@ -131,18 +176,6 @@ module.exports = function(class_string){
 			return this.sortObjectKeys(style_object);
 		},
 
-		renderDomNode: function(el){
-
-			var style = this.getStyleObject(this.getElClasses(el));
-
-			for(var property in style) {
-			 	el.style[property] = style[property];
-			}
-
-			return;
-		},
-
-		// Helpers
 		sortObjectKeys: function(style_object){
 		
 			var keys = Object.keys(style_object),

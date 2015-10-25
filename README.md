@@ -81,14 +81,17 @@ fontSize | font-number(p)
 ####Semantic
 Property | Shorti
 --- | --- | ---
-boxSizing:border-box | border-box
+boxSizing:border-box | box
 display:block | block
 display:inline | inline
 display:inline-block | inline-block
 position:relative | relative
 position:absolute | absolute
 position:fixed | fixed
-float:left | left
-float:right | right
+float:left | pull-left
+float:right | pull-right
 cursor:pointer | pointer
-borderStyle | solid
+borderStyle:solid | solid
+textAlign:center | text-center
+textAlign:left | text-left
+textAlign:right | text-right
