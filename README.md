@@ -1,5 +1,5 @@
 # Shorti
-Shorti helps you style your React components by rendering short-hand "class names" into inline styles.  Also works in React Native.  Check out the API section below to get all the shorties.  
+Shorti helps you style your React components by rendering short-hand helpers into inline styles.  Also works in React Native.  Check out the API section below to get all the shorties.  
 
 This is a work in progress, please fork and add to it!
 
