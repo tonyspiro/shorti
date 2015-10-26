@@ -1,6 +1,6 @@
 {
   "name": "shorti",
-  "version": "1.1.11",
+  "version": "1.1.12",
   "description": "Shorti helps you add style to your React components by rendering short-hand \"class names\" into inline styles.",
   "main": "index.js",
   "directories": {
