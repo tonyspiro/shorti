@@ -1,5 +1,5 @@
 // shorti-browser.js 
-(function(){
+function Shorti(options, callback){
 
 	var style_map__numeric = {
 		// Numeric
@@ -220,5 +220,11 @@
 	var shortis = document.getElementsByClassName('shorti');
 	for(var i=0; i<shortis.length;i++){
 		Shorti.renderDomNodes(shortis[i]);
+		if(options.showOnRender){
+			shortis[i].style.display = 'block';
+		}
 	}
-})();
+
+	callback();
+
+}

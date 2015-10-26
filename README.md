@@ -57,10 +57,26 @@ This:
 <head>
 	<meta charset="UTF-8">
 	<title>Shorti Browser Example</title>
+	<style>
+	/* So we don't get FOUC */
+	.shorti{
+		display: none;
+	}
+	</style>
 </head>
 <body>
-	<div class="shorti w-100 h-100 solid bw-1 bc-000 center-block t-300 relative"></div>
-	<script src="shorti-browser.js"></script>
+	<div class="shorti p-40 w-100 h-100 solid bw-1 bc-000 center-block t-100 relative">
+		Here is some text...
+	</div>
+	<di class="shorti p-40 w-100 h-100 solid bw-1 bc-000 br-100 l-60p t-107 absolute">
+		Here is some more text...
+	</div>
+	<script src="../../shorti-browser.js"></script>
+	<script>
+	Shorti({ showOnRender: true }, function(){
+		// Do callback stuff here...
+	});
+	</script>
 </body>
 </html>
 ```
@@ -71,10 +87,26 @@ renders to:
 <head>
 	<meta charset="UTF-8">
 	<title>Shorti Browser Example</title>
+	<style>
+	/* So we don't get FOUC */
+	.shorti{
+		display: none;
+	}
+	</style>
 </head>
 <body>
-	<div class="shorti w-100 h-100 solid bw-1 bc-000 center-block t-300 relative" style="border: 1px solid rgb(0, 0, 0); height: 100px; margin: 0px auto; position: relative; top: 300px; width: 100px;"></div>
-	<script src="shorti-browser.js"></script>
+	<div class="shorti p-40 w-100 h-100 solid bw-1 bc-000 center-block t-100 relative" style="border: 1px solid rgb(0, 0, 0); height: 100px; margin: 0px auto; padding: 40px; position: relative; top: 100px; width: 100px; display: block;">
+		Here is some text...
+	</div>
+	<di class="shorti p-40 w-100 h-100 solid bw-1 bc-000 br-100 l-60p t-107 absolute" style="border: 1px solid rgb(0, 0, 0); border-radius: 100px; height: 100px; left: 60%; padding: 40px; position: absolute; top: 107px; width: 100px; display: block;">
+		Here is some more text...
+	</div>
+	<script src="../../shorti-browser.js"></script>
+	<script>
+	Shorti({ showOnRender: true }, function(){
+		// Do callback stuff here...
+	});
+	</script>
 </body>
 </html>
 ```
