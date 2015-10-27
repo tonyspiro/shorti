@@ -3,6 +3,8 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Shorti Browser Example</title>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
 	<style>
 	/* So we don't get FOUC */
 	.shorti{
@@ -11,16 +13,18 @@
 	</style>
 </head>
 <body>
-	<div class="shorti p-40 w-100 h-100 solid bw-1 bc-000 center-block t-100 relative">
-		Here is some text...
-	</div>
-	<div class="shorti p-40 w-100 h-100 solid bw-1 bc-000 br-100 l-60p t-107 absolute">
-		Here is some more text...
+	<div class="container">
+		<div class="shorti p-40 relative bc-000 bw-1 solid t-100 w-300 center-block">
+			Here is some text...
+		</div>	
 	</div>
 	<script src="../../shorti-browser.js"></script>
 	<script>
-	Shorti({ showOnRender: true }, function(){
+	Shorti({
+		showOnRender: true
+	}, function(){
 		// Do callback stuff here...
+		// alert('test');
 	});
 	</script>
 </body>

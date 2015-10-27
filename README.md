@@ -60,7 +60,7 @@ This:
 	<style>
 	/* So we don't get FOUC */
 	.shorti{
-		display: none;
+		visibility: hidden;
 	}
 	</style>
 </head>
@@ -73,7 +73,7 @@ This:
 	</div>
 	<script src="../../shorti-browser.js"></script>
 	<script>
-	Shorti({ showOnRender: true }, function(){
+	Shorti({ visibleOnRender: true }, function(){
 		// Do callback stuff here...
 	});
 	</script>
@@ -90,7 +90,7 @@ renders to:
 	<style>
 	/* So we don't get FOUC */
 	.shorti{
-		display: none;
+		visibility: hidden;
 	}
 	</style>
 </head>
@@ -103,7 +103,7 @@ renders to:
 	</div>
 	<script src="../../shorti-browser.js"></script>
 	<script>
-	Shorti({ showOnRender: true }, function(){
+	Shorti({ visibleOnRender: true }, function(){
 		// Do callback stuff here...
 	});
 	</script>

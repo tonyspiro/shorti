@@ -218,6 +218,10 @@ function Shorti(options, callback){
 	};
 
 	var shortis = document.getElementsByClassName('shorti');
+
+	if(options.targetClass){
+		shortis = document.getElementsByClassName(options.targetClass);
+	}
 	for(var i=0; i<shortis.length;i++){
 		Shorti.renderDomNodes(shortis[i]);
 		if(options.showOnRender){

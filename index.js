@@ -94,6 +94,14 @@ module.exports = function(class_string){
 		"text-right": {
 			"key": "textAlign",
 			"value": "right",
+		},
+		"center-block": {
+			"key": "margin",
+			"value": "0 auto"
+		},
+		"clearfix": {
+			"key": "clear",
+			"value": "both"
 		}
 	};
 
