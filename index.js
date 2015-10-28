@@ -102,7 +102,16 @@ module.exports = function(class_string){
 		"clearfix": {
 			"key": "clear",
 			"value": "both"
+		},
+		"no-repeat": {
+			"key": "backgroundRepeat",
+			"value": "no-repeat"
 		}
+	};
+
+	var style_map__custom = {
+		// Custom names
+		"bg": "custom"
 	};
 
 	var Shorti = {
@@ -113,15 +122,19 @@ module.exports = function(class_string){
 
 		isNubmeric: function(prop_abrv){
 			
-			if(	style_map__numeric.hasOwnProperty(prop_abrv)){
-				
-				return true;
+			return style_map__numeric.hasOwnProperty(prop_abrv);
 
-			} else {
+		},
 
-				return false;
+		isSemantic: function(prop_abrv){
 			
-			}
+			return style_map__semantic.hasOwnProperty(prop_abrv);
+
+		},
+
+		isCustom: function(prop_abrv){
+			
+			return style_map__custom.hasOwnProperty(prop_abrv);
 
 		},
 
@@ -135,7 +148,7 @@ module.exports = function(class_string){
 				
 				var prop_abrv = el_class.split('-')[0];
 
-				// Has a numberic value
+				// Numberic shortis
 				if(_this.isNubmeric(prop_abrv)){
 					
 					var value = el_class.split('-')[1];
@@ -155,7 +168,7 @@ module.exports = function(class_string){
 						}
 
 						// Border color
-						if (prop_abrv.indexOf('bc') !== -1) {
+						if (_this.isHex(value) && prop_abrv.indexOf('bc') !== -1) {
 							new_value = '#' + value;
 						}
 						
@@ -168,12 +181,15 @@ module.exports = function(class_string){
 						if (value.indexOf('n') !== -1) {
 							new_value = '-' + value.replace('n','') + 'px';
 						}
-
+						
 						style_object[property] = new_value;
 
 					}
 				
-				} else { // END Numberic values
+				}  // END Numberic names
+
+				// Semantic shortis
+				if(_this.isSemantic(el_class)){
 
 					var prop_abrv = el_class;
 
@@ -183,7 +199,37 @@ module.exports = function(class_string){
 						style_object[propery] = style_map__semantic[prop_abrv].value;
 					}
 
-				}
+				}  // END Semantic names
+
+				// Custom shortis
+				if(_this.isCustom(prop_abrv)){
+
+					var prop_block = el_class.split('-')[0];
+					var prop_element = el_class.split(prop_block)[1].slice( 1 );
+
+					// Style map semantic
+					if (style_map__custom.hasOwnProperty(prop_block)) {
+
+						// BGs
+						if (prop_block == 'bg') {
+							if (prop_element.indexOf('url(') !== -1) {
+								var property = 'backgroundImage';
+								var value = prop_element;
+							}
+							if (prop_element == 'cover') {
+								var property = 'backgroundSize';
+								var value = prop_element;
+							}
+							if (_this.isHex(prop_element)) {
+								var property = 'backgroundColor';
+								var value = '#' + prop_element;
+							}
+						}
+					}
+
+					style_object[property] = value;
+
+				}  // END Custom names
 
 			});
 
@@ -202,6 +248,11 @@ module.exports = function(class_string){
 			}
 			return new_obj;
 
+		},
+
+		isHex: function(value){
+			var isHex  = /(^[0-9A-F]{6}$)|(^[0-9A-F]{3}$)/i.test(value);
+			return isHex;
 		},
 
 		render: function(class_string){
