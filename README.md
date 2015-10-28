@@ -73,7 +73,7 @@ This:
 	</div>
 	<script src="../../shorti-browser.js"></script>
 	<script>
-	Shorti({ visibleOnRender: true }, function(){
+	Shorti({ showOnRender: true }, function(){
 		// Do callback stuff here...
 	});
 	</script>
@@ -103,7 +103,7 @@ renders to:
 	</div>
 	<script src="../../shorti-browser.js"></script>
 	<script>
-	Shorti({ visibleOnRender: true }, function(){
+	Shorti({ showOnRender: true }, function(){
 		// Do callback stuff here...
 	});
 	</script>
