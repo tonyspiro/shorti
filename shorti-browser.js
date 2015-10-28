@@ -219,16 +219,16 @@ function Shorti(options, callback){
 
 	var shortis = document.getElementsByClassName('shorti');
 
-	if(options.targetClass){
+	if(options && options.targetClass){
 		shortis = document.getElementsByClassName(options.targetClass);
 	}
 	for(var i=0; i<shortis.length;i++){
 		Shorti.renderDomNodes(shortis[i]);
-		if(options.showOnRender){
+		if(options && options.showOnRender){
 			shortis[i].style.display = 'block';
 		}
 	}
 
-	callback();
+	if(callback) callback();
 
 }
