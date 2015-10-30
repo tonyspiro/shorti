@@ -163,8 +163,10 @@ module.exports = function(class_string){
 						new_value = value + 'px';	// default
 
 						// Native support
-						if(!window.document){
-							new_value = parseInt(value.replace('px',''));
+				    if(!_this.isNode){
+				    	if(window){
+				    		new_value = parseInt(value.replace('px',''));
+				    	}
 						}
 
 						// Border color
@@ -220,6 +222,10 @@ module.exports = function(class_string){
 								var property = 'backgroundSize';
 								var value = prop_element;
 							}
+							if (prop_element == 'center') {
+								var property = 'backgroundPosition';
+								var value = prop_element;
+							}
 							if (_this.isHex(prop_element)) {
 								var property = 'backgroundColor';
 								var value = '#' + prop_element;
@@ -248,6 +254,14 @@ module.exports = function(class_string){
 			}
 			return new_obj;
 
+		},
+
+		isNode: function(){
+			if (typeof module !== 'undefined' && module.exports) {
+				return true;
+	    } else {
+				return false;
+	    }
 		},
 
 		isHex: function(value){
