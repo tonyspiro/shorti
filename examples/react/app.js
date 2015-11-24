@@ -17,6 +17,6 @@ render(){
 };
 
 render(
-  <App />,
+<App />,
   document.getElementById('app-root')
 );
