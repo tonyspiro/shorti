@@ -25,6 +25,7 @@ module.exports = function(class_string){
 		"b": "bottom",
 		"br": "borderRadius",
 		"font": "fontSize",
+		"fw": "fontWeight",
 		"bw": "borderWidth",
 		"bc": "borderColor",
 	};
@@ -182,6 +183,11 @@ module.exports = function(class_string){
 						// Negative
 						if (value.indexOf('n') !== -1) {
 							new_value = '-' + value.replace('n','') + 'px';
+						}
+
+						// Font Weight
+						if (property == 'fontWeight') {
+							new_value = value.replace('px','');
 						}
 						
 						style_object[property] = new_value;
