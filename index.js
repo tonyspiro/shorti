@@ -26,8 +26,10 @@ module.exports = function(class_string){
 		"br": "borderRadius",
 		"font": "fontSize",
 		"fw": "fontWeight",
+		"color": "color",
 		"bw": "borderWidth",
 		"bc": "borderColor",
+		"z": "zIndex"
 	};
 
 	var style_map__semantic = {
@@ -170,6 +172,11 @@ module.exports = function(class_string){
 				    	}
 						}
 
+						// Color
+						if (_this.isHex(value) && prop_abrv.indexOf('color') !== -1) {
+							new_value = '#' + value;
+						}
+
 						// Border color
 						if (_this.isHex(value) && prop_abrv.indexOf('bc') !== -1) {
 							new_value = '#' + value;
@@ -187,6 +194,11 @@ module.exports = function(class_string){
 
 						// Font Weight
 						if (property == 'fontWeight') {
+							new_value = value.replace('px','');
+						}
+
+						// Z Index
+						if (property == 'zIndex') {
 							new_value = value.replace('px','');
 						}
 						
