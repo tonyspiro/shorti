@@ -13,8 +13,8 @@ npm install shorti
 ```
 and then include the package in your app:
 ```javascript
-import Shorti from 'shorti';
-let style = Shorti('w-500 h-500 p-20');
+import S from 'shorti';
+let style = S('w-500 h-500 p-20');
 /* same as 
 let style = {
 		width: '500px',
@@ -38,7 +38,7 @@ Edit app.js for live reloading
 
 This:
 ```javascript
-let style = Shorti('w-500 h-210 p-40 font-50 relative t-100 l-50p ml-n205 solid bw-1 bc-444');
+let style = S('w-500 h-210 p-40 font-50 relative t-100 l-50p ml-n205 solid bw-1 bc-444');
 <div style={ style }>
 	Hello world
 </div>;
