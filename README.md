@@ -58,10 +58,10 @@ This:
   <meta charset="UTF-8">
   <title>Shorti Browser Example</title>
   <style>
-  /* So we don't get FOUC */
-  .shorti{
-  	display: none;
-  }
+    /* So we don't get FOUC */
+    .shorti{
+    	display: none;
+    }
   </style>
 </head>
 <body>
@@ -88,10 +88,10 @@ renders to:
   <meta charset="UTF-8">
   <title>Shorti Browser Example</title>
   <style>
-  /* So we don't get FOUC */
-  .shorti{
-    display: none;
-  }
+    /* So we don't get FOUC */
+    .shorti{
+      display: none;
+    }
   </style>
 </head>
 <body>
