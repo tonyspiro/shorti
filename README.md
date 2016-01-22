@@ -60,7 +60,7 @@ This:
   <style>
     /* So we don't get FOUC */
     .shorti{
-    	display: none;
+      display: none;
     }
   </style>
 </head>
