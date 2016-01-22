@@ -14,9 +14,9 @@ npm install shorti
 and then include the package in your app:
 ```javascript
 import S from 'shorti';
-let style = S('w-500 h-500 p-20');
+const style = S('w-500 h-500 p-20');
 /* same as 
-let style = {
+const style = {
   width: '500px',
   height: '500px',
   padding: '20px'
@@ -38,15 +38,15 @@ Edit app.js for live reloading
 
 This:
 ```javascript
-let style = S('w-500 h-210 p-40 font-50 relative t-100 l-50p ml-n205 solid bw-1 bc-444');
+const style = S('w-500 h-210 p-40 font-50 relative t-100 l-50p ml-n205 solid bw-1 bc-444');
 <div style={ style }>
-	Hello world
+  Hello world
 </div>;
 ```
 renders to:
 ```html
 <div style="border-color:#444;border-style:solid;border-width:1px;font-size:50px;height:210px;left:50%;margin-left:-205px;padding:40px;position:relative;top:100px;width:500px;">
-	Hello world
+  Hello world
 </div>
 ```
 ###Browser Example
