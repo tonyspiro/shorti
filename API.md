@@ -1,4 +1,5 @@
 ###API
+More coming soon!  Please fork to add!
 ####Numeric
 p = percent<br>
 n = negative<br>
