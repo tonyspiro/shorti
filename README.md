@@ -73,9 +73,9 @@ This:
   </div>
   <script src="../../shorti-browser.js"></script>
   <script>
-  Shorti({ showOnRender: true }, function(){
-    // Do callback stuff here...
-  });
+    Shorti({ showOnRender: true }, function(){
+      // Do callback stuff here...
+    });
   </script>
 </body>
 </html>
