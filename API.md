@@ -57,6 +57,7 @@ Shorti | Property
 --- | --- | ---
 bg-url(somefilepath.filetype) | backgroundImage:url(somefilepath.filetype)
 bg-cover | backgroundSize:cover
+bg-center | backgroundPosition:center
 bg-000 or bg-000000 | backgroundColor:#000000
 
 ####Borders
