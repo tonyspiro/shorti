@@ -51,13 +51,13 @@ text-right | textAlign:right
 center-block | margin:0 auto
 clearfix | clear:both
 
-####Background
+####Backgrounds
 Shorti | Property
 --- | --- | ---
 bg-url(somefilepath.filetype) | backgroundImage:url(somefilepath.filetype)
 bg-cover | backgroundSize:cover
 bg-000 or bg-000000 | backgroundColor:#000000
 
-####Border
+####Borders
 border-1-solid-ccc | border:1px solid #ccc
 border-top-1-solid-ccc | borderTop:1px solid #ccc
