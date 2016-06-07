@@ -17,6 +17,7 @@ mt-number(p,n) | marginTop
 mr-number(p,n) | marginRight
 mb-number(p,n) | marginBottom
 ml-number(p,n) | marginLeft
+op(n) | opacity
 p-number(p) | padding
 pt-number(p) | paddingTop
 pr-number(p) | paddingRight
@@ -62,3 +63,4 @@ bg-000 or bg-000000 | backgroundColor:#000000
 ####Borders
 border-1-solid-ccc | border:1px solid #ccc
 border-top-1-solid-ccc | borderTop:1px solid #ccc
+border-none | border: none
