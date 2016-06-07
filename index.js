@@ -13,6 +13,7 @@ module.exports = function(class_string){
     "mr": "marginRight",
     "mb": "marginBottom",
     "ml": "marginLeft",
+    "op": "opacity",
     "p": "padding",
     "pt": "paddingTop",
     "pr": "paddingRight",
@@ -143,6 +144,9 @@ module.exports = function(class_string){
             var new_value;
             // Default px
             new_value = value + 'px'; // default
+            // Special cases
+            if (property === 'opacity')
+              new_value = value
             // Native support
             if(!_this.isNode){
               if(window){
@@ -221,6 +225,8 @@ module.exports = function(class_string){
                 var property = 'border';
                 var value = full_split[1] + 'px ' + full_split[2] + ' #' + full_split[3];
               }
+              if (full_split[1] === 'none')
+                var value = 'none';
               
             }
           }
