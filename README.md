@@ -38,7 +38,7 @@ Edit app.js for live reloading
 
 This:
 ```javascript
-const style = S('border-1-solid-444 w-500 h-210 p-40 font-50 relative t-100 l-50p ml-n205');
+const style = S('border-1-solid-444 w-500 h-210 p-40 font-50 relative t-100 l-50p ml-205n');
 <div style={ style }>
   Hello world
 </div>;
