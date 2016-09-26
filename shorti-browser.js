@@ -216,6 +216,10 @@ function Shorti(options, callback){
                 var property = 'backgroundSize';
                 var value = prop_element;
               }
+              if (prop_element == 'contain') {
+                var property = 'backgroundSize';
+                var value = prop_element;
+              }
               if (prop_element == 'center') {
                 var property = 'backgroundPosition';
                 var value = prop_element;
