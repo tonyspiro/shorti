@@ -7,7 +7,7 @@ This is a work in progress, please fork and add to it!
 
 ### Getting started
 
-#####Install
+##### Install
 ```
 npm install shorti
 ```
@@ -23,13 +23,13 @@ const style = {
 };
 */
 ```
-###React Example
+### React Example
 ```
 git clone https://github.com/tonyspiro/shorti
 cd shorti/examples/react
 npm install
 ```
-#####Run webpack dev
+##### Run webpack dev
 ```
 npm run dev
 ```
@@ -49,7 +49,7 @@ renders to:
   Hello world
 </div>
 ```
-###Browser Example
+### Browser Example
 This:
 ```html
 <!DOCTYPE html>
