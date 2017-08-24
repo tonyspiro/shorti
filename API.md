@@ -5,9 +5,8 @@ More coming soon!  Please fork to add!
 p = percent<br>
 n = negative<br>
 
-Numeric
-Shorti | Property
---- | --- | ---
+| Shorti  | Property |
+| ------------- | ------------- |
 w-number(p) | width
 minw-number(p) | minWidth
 maxw-number(p) | maxWidth
@@ -35,9 +34,8 @@ br-number(p) | borderRadius
 font-number(p) | fontSize
 
 #### Semantic
-Semantic
-Shorti | Property
---- | --- | ---
+| Shorti  | Property |
+| ------------- | ------------- |
 box | boxSizing:border-box 
 block | display:block 
 inline | display:inline 
@@ -57,18 +55,16 @@ center-block | margin:0 auto
 clearfix | clear:both
 
 #### Backgrounds
-Backgrounds
-Shorti | Property
---- | --- | ---
+| Shorti  | Property |
+| ------------- | ------------- |
 bg-url(somefilepath.filetype) | backgroundImage:url(somefilepath.filetype)
 bg-cover | backgroundSize:cover
 bg-center | backgroundPosition:center
 bg-000 or bg-000000 | backgroundColor:#000000
 
 #### Borders
-Borders
-Shorti | Property
---- | --- | ---
+| Shorti  | Property |
+| ------------- | ------------- |
 border-1-solid-ccc | border:1px solid #ccc
 border-top-1-solid-ccc | borderTop:1px solid #ccc
 border-none | border: none
