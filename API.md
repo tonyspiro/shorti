@@ -1,9 +1,11 @@
-###API
+### API
 More coming soon!  Please fork to add!
-####Numeric
+
+#### Numeric
 p = percent<br>
 n = negative<br>
 
+Numeric
 Shorti | Property
 --- | --- | ---
 w-number(p) | width
@@ -32,7 +34,7 @@ bc-(hex value) | borderColor
 br-number(p) | borderRadius
 font-number(p) | fontSize
 
-####Semantic
+Semantic
 Shorti | Property
 --- | --- | ---
 box | boxSizing:border-box 
@@ -53,7 +55,8 @@ text-right | textAlign:right
 center-block | margin:0 auto
 clearfix | clear:both
 
-####Backgrounds
+#### Backgrounds
+Backgrounds
 Shorti | Property
 --- | --- | ---
 bg-url(somefilepath.filetype) | backgroundImage:url(somefilepath.filetype)
@@ -61,7 +64,8 @@ bg-cover | backgroundSize:cover
 bg-center | backgroundPosition:center
 bg-000 or bg-000000 | backgroundColor:#000000
 
-####Borders
+#### Borders
+Borders
 Shorti | Property
 --- | --- | ---
 border-1-solid-ccc | border:1px solid #ccc
