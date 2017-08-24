@@ -34,6 +34,7 @@ bc-(hex value) | borderColor
 br-number(p) | borderRadius
 font-number(p) | fontSize
 
+#### Semantic
 Semantic
 Shorti | Property
 --- | --- | ---
